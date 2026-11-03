@@ -1,5 +1,8 @@
 const checkStringLength = (string, maxLength) => string.length <= maxLength;
 
+checkStringLength('проверяемая строка', 20);
+checkStringLength('проверяемая строка', 10);
+
 const isPalindrome = (string) => {
   const normalizedString = string.toLowerCase();
   let reversedString = '';
@@ -10,3 +13,7 @@ const isPalindrome = (string) => {
 
   return normalizedString === reversedString;
 };
+
+isPalindrome('топот');
+isPalindrome('ДовОд');
+isPalindrome('Кекс');
